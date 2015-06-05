@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aftersell - DSS</title>
+
+    <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
+    <link href="css/plugins/pace/pace.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+    <!-- GLOBAL STYLES - Include these on every page. -->
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery.range.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumb.css">
+    <link href="css/bajaj.css" rel="stylesheet">
+
+    <!-- THEME STYLES - Include these on every page. -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins.css" rel="stylesheet">
+    <style type="text/css">
+        a.float-right, button.float-right {
+            float: right;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+
+        .portlet .portlet-heading .portlet-title h4 {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .submit-btn {
+            position: absolute;
+            top: 5px;
+            right: 16px;
+        }
+
+        .portlet-heading label {
+            margin-bottom: 0;
+            margin-top: 4px;
+        }
+        .portlet-heading {
+            border-radius: 4px;
+        }
+
+        @media (min-width: 768px) {
+            .audit-questionnaire-wrapper .portlet {
+               margin-bottom: 0 !important; 
+            }
+        }
+
+        .slider-container .theme-green {
+            margin: 0 auto;
+        }
+        
+        .pointer-label {
+            display: none;
+        }
+
+
+    </style>
+    <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
+    <link href="css/demo.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp" class="noselect">
+
+    <div id="wrapper">
+
+        <!-- begin TOP NAVIGATION -->
+        <nav class="navbar-top" role="navigation" id="mob-top-navbar">
+            <!-- begin BRAND HEADING -->
+            <div class="navbar-header" id="mob-navbar-header">
+                <div class="mobile-topmenu-btn">
+                      <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a href="menu.html"><img class="img-responsive pull-right" id="header-home-logo" src="img/home.png"></a>
+                </div>
+                                  
+            </div>
+            <!-- end BRAND HEADING -->
+
+            <div class="nav-top">
+
+                <!-- begin LEFT SIDE WIDGETS -->
+                <ul class="nav navbar-left top-nav-listElement">
+                    <li class="tooltip-sidebar-toggle">
+                        <img id="bajaj-logo" class="img-responsive" src="img/Bajaj_Logo.png">
+                    </li>
+                    <li class="tooltip-sidebar-toggle bajaj-toggle-btn">
+                        <a href="#" id="sidebar-toggle" data-toggle="tooltip" data-placement="right" title="Sidebar Toggle">
+                            <i class="fa fa-bars bajaj-slide-menu"></i>
+                        </a>
+                    </li>
+                    <li class="home-btn-liElelment"><a href="menu.html"><img src="img/home.png" class="img-responsive pull-right go-home-btn"></a></li>
+                    <!-- You may add more widgets here using <li> -->
+                </ul>
+                <!-- end LEFT SIDE WIDGETS -->
+            </div>
+            <!-- /.nav-top -->
+        </nav>
+        <!-- /.navbar-top -->
+
+<!-- ================== TOP Navbar (new) =========================== -->
+
+        <nav class="navbar navbar-default" style="display:none;">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <img id="bajaj-logo" class="img-responsive" src="img/Bajaj_Logo.png">
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- begin SIDE NAVIGATION -->
+        <nav class="navbar-side" role="navigation">
+            <div class="navbar-collapse sidebar-collapse collapse">
+                <ul id="side" class="nav navbar-nav side-nav bajaj-sidetab bajaj-side-menuStack" style="border-right: 1px solid #848484;">
+                </ul>
+                <!-- /.side-nav -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- /.navbar-side -->
+        <!-- end SIDE NAVIGATION -->
+
+        <!-- begin MAIN PAGE CONTENT -->
+        <div id="page-wrapper" class="dashboard-moreinfo audit-questionnaire-wrapper">
+
+            <div class="page-content">
+
+                <div id="section-header" class="clearfix col-md-12 padding-zero">
+                    <h3>Dealership Service Standard</h3>
+                </div>
+                <div id="breadcrumb">
+                    
+                </div>
+
+                <section id="dealer_portfolio">
+                    <div class="clerafix col-md-12 dealerInfo-block" style="">
+                        <div class="col-lg-7" style="margin: 0 auto;float:none;">
+                            <div class="portlet portlet-green">
+                                <div class="portlet-heading">
+                                    <div class="portlet-title">
+                                        <h4 class="col-md-6 col-sm-6 col-xs-6" id="dealer_name"></h4>
+                                        <p class="col-md-6 col-sm-6 col-xs-6 pull-right text-right dealerCode"></p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="audit-questionnaire-area" class="clearfix"></section>
+
+                <section id="audit-manpower">
+                    <form id="manpowerData" action="" onsubmit="return manpowerSubmit('manpowerData', manpowerReturn)">
+
+                        <input type="hidden" id="txt_ds1">
+                        <input type="hidden" id="txt_dp1">
+
+                        <input type="hidden" name="auditID" value="" id="auditID">
+                        <input type="hidden" name="action" value="savemanpower">
+                        <input type="hidden" name="manpower_dealerScore" value="" id="manpower_dealerScore">
+
+                        <p class="manpower-notice text-left">Note: If the manpower required is not a number , please type "0" in the no's available</p>
+                        <table class="table table-bordered manpower-table">
+                            <tbody id="mainBody" ng-controller="getData">
+                                <tr>
+                                    <td><b>Enter Average Monthly Service Volume<b></td>
+                                    <td class="text-center"><input type="textbox" id="txt_AMSV" name="txt_AMSV" onkeypress="return isNumber(event)" maxlength="10" ></td>
+                                    <td>Daily Service</td>
+                                    <td id="txt_ds"></td>
+                                    <td rowspan="3">Manpower Required based on sales &amp; service volume<br /><br /></td>
+
+                                </tr>
+                                <tr>
+                                    <td><b>Enter Average Monthly PDI Volume</b></td>
+                                    <td class="text-center"><input type="textbox" id="txt_AMPV" name="txt_AMPV" onkeypress="return isNumber(event)" maxlength="10"></td>
+                                    <td>Daily PDI</td>
+                                    <td  id="txt_dp"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><b>Job role</b></td>
+                                    <td class="text-center"><b>&nbsp;No.s Available</b></td>
+                                    <td class="text-center"><b>Dealer Score</b></td>
+                                    <td class="text-center"><b>Max Score</b></td>
+                                </tr>
+
+                                <tr ng-repeat="x in data.job_roles" class="row{{$index+1}} rowTemplate" on-last-repeat >
+                                    <td class="cell_1">{{ x.job_role }}</td>
+                                    <td class="text-center" ng-init="x.rowNo = $index" class="cell_2">
+                                        <input class="txtauditorMarks" type="textbox" id="txt_row{{$index+1}}"  ng-model="txt" name="txt_row{{$index+1}}" onkeypress="return isNumber(event)" maxlength="10"  disabled></td>
+                                    
+                                    <td class="drs1 cell_4 text-center"><span id="txt_{{$index}}"></span></td>
+                                    <td class="cell_3 text-center">{{x.max_score}}</td>
+                                    <td class="cell_5 text-center">&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td><b>Total : </b></td>
+                                    <td><b>Adherence: <span class="txtDealerPercentage"></span></b></td>
+                                    <td class="text-center"><b><span class="txtDealerScore"></span></b></b></td>
+                                    <td class="text-center"><b><span class="txtMaxScore"></span></b></td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                        <div class="text-center" id="saveBtnWrapper" style="clear: both;color: #000;display: block;position: relative;width: 100%;padding:10px 0">
+                            
+                        </div>
+                    </form>
+                    
+                </section>
+
+                </div>
+
+                <footer class="bajaj-footer">
+                    <span>All rights reserved by Bajaj Auto. Ltd.</span><br>
+                    <span>Powered by <a href="//www.gladminds.co/#products" target="_blank">GladMinds Connect Platform</a></span><br>
+                    <span>Version 2.0.7</span>
+                </footer>
+
+
+            </div>
+            <!-- /.page-content -->
+
+        </div>
+        <!-- /#page-wrapper -->
+        <!-- end MAIN PAGE CONTENT -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
+    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <!-- Logout Notification Box -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="logout-window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header1">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            
+          </div>
+          <div class="modal-body" id="logout-modal-img">
+                
+                <h4 class="modal-title" id="myModalLabel">Select "Logout" below if you are ready to end your session.</h4>
+          </div>
+          <div class="modal-footer confirm-log-btns">
+            <button type="button" id="logout-user" class="btn logout-window-btns">Logout</button>
+            <button type="button" class="btn logout-window-btns" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sop-repair-popup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body clearfix">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="10%">S.N</th>
+                                <th width="90%">Question</th>
+                            </tr>
+                        </thead>
+                        <tbody class="repair-sop-tbody">
+                            
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-green pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/plugins/bootbox.min.js"></script>
+    
+    <!-- /#logout -->
+    <script src="js/plugins/pace/pace.js"></script>
+    <!-- Logout Notification jQuery -->
+    <script src="js/inc.js"></script>
+   
+    <script src="js/plugins/popupoverlay/logout.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+
+    <!-- Date Range Picker -->
+    <script src="js/plugins/daterangepicker/moment.js"></script>
+    <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+   
+
+
+    <!-- DataTables -->
+    <script type="text/javascript" src="js/plugins/countUp.min.js"></script>
+
+    <!-- THEME SCRIPTS -->
+    <script src="js/flex.js"></script>
+    <script src="js/jquery.range.js"></script>
+
+    <script type="text/javascript" src="js/plugins/jquery.maskedinput.js"></script>
+
+    <!-- scroll file-->
+    <script type="text/javascript" src="js/plugins/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/audit-questionnaire.js"></script>
+    <script type="text/javascript" src="js/manpower.js"></script>
+    
+    <script type="text/javascript">
+    $(document).on('click', '.side-menus', function(){
+       $("body").scrollTo($(this).attr('href'), {
+            duration: '300', 
+            onAfter: function() {}
+        });
+    });
+
+    // Validation
+    $(document).on('keypress', '.technicianName', function(event){
+         var inputValue = event.charCode;
+         if(( (inputValue > 32 && inputValue < 65) || (inputValue > 90 && inputValue < 97) || (inputValue > 122 && inputValue < 127 )  ) && (inputValue != 32) ){
+            event.preventDefault();
+         }
+    });
+   
+    </script>
+
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+
+</body>
+</html>

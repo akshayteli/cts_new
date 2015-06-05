@@ -1,0 +1,38 @@
+{
+	"brand": "Bajaj",
+    "type": "Digital Service Standards",
+    "service_name": "Dashboard",
+    "current_date" : "Jan 17 2015",
+    "objects" : [
+    	{
+    		
+            "id" : "1",
+            "value": "2603",
+            "name": "Submitted Audits",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "",
+            "more_info": "moreinfo-audits.html"
+    	},
+    	{
+            
+            "id" : "2",
+            "value": "5625",
+            "name": "Saved Audits",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "",
+            "more_info": "moreinfo-audits.html"
+        },
+        {
+    		
+            "id" : "3",
+            "value": "+",
+            "name": "Start New Audit",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "img/search_engine_optimisation-512.png",
+            "more_info": "process-edit.html"
+    	}
+    ]
+}

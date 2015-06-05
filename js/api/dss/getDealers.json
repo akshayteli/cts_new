@@ -1,0 +1,106 @@
+
+{ "objects":[{
+
+		            "dealer_id": "13",
+		            "dealer_code": "10167",
+		            "dealer_name": "JAI AUTOS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "CHENNAI"
+				},{
+
+		            "dealer_id": "357",
+		            "dealer_code": "11966",
+		            "dealer_name": "ACHINTYA AUTOMOBILES",
+		            "email": "",
+		            "mobile": "",
+		            "address": "METTUPALAYAM"
+				},{
+
+		            "dealer_id": "388",
+		            "dealer_code": "10591",
+		            "dealer_name": "JAI AUTOMOBILES",
+		            "email": "",
+		            "mobile": "",
+		            "address": "CHENNAI"
+				},{
+
+		            "dealer_id": "390",
+		            "dealer_code": "11562",
+		            "dealer_name": "KHIVRAJ AUTOMOBILES",
+		            "email": "",
+		            "mobile": "",
+		            "address": "CHENNAI"
+				},{
+
+		            "dealer_id": "436",
+		            "dealer_code": "10836",
+		            "dealer_name": "AAKASH AUTOMOBILES PVT LTD",
+		            "email": "",
+		            "mobile": "",
+		            "address": "PONDICHERRY"
+				},{
+
+		            "dealer_id": "446",
+		            "dealer_code": "10491",
+		            "dealer_name": "SRI JAI AUTOS PVT LTD",
+		            "email": "",
+		            "mobile": "",
+		            "address": "CHENNAI"
+				},{
+
+		            "dealer_id": "485",
+		            "dealer_code": "11177",
+		            "dealer_name": "R. K. MOTORS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "MADURAI"
+				},{
+
+		            "dealer_id": "498",
+		            "dealer_code": "11843",
+		            "dealer_name": "BALAMURUGA MOTORS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "MADURAI"
+				},{
+
+		            "dealer_id": "517",
+		            "dealer_code": "10057",
+		            "dealer_name": "JAIKRISHNAA AUTO PVT LTD.",
+		            "email": "",
+		            "mobile": "",
+		            "address": "COIMBATORE"
+				},{
+
+		            "dealer_id": "1061",
+		            "dealer_code": "10664",
+		            "dealer_name": "RAJARAJAN MOTORS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "PONDICHERRY"
+				},{
+
+		            "dealer_id": "1062",
+		            "dealer_code": "11386",
+		            "dealer_name": "SRI AUTOS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "COIMBATORE"
+				},{
+
+		            "dealer_id": "1063",
+		            "dealer_code": "11740",
+		            "dealer_name": "SAI MOTO CORPS",
+		            "email": "",
+		            "mobile": "",
+		            "address": "COIMBATORE"
+				},{
+
+		            "dealer_id": "1064",
+		            "dealer_code": "11851",
+		            "dealer_name": "POWER BIKES",
+		            "email": "",
+		            "mobile": "",
+		            "address": "CHENNAI"
+				}]}

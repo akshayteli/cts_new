@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themes.startbootstrap.com/flex-admin-v1.2/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jan 2015 07:11:45 GMT -->
+<head>    
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <meta content="width=300, initial-scale=1" name="viewport">
+    <meta name="description" content="">
+    <title>Bajaj - CTS</title>
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pdi-style.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .other_defects{display:none}
+        #pdi_view{display:none}
+        .btn-blue.active, .btn-blue:active,.btn-white.active, .btn-white:active{background-color:#2980b9}
+        .page-title .breadcrumb{margin-bottom:0;background-color:#e0e7e8}
+        .page-title{margin:2% 0}
+        .page-title h1,.circle-tile{margin-bottom:2%!important}
+        .row,.portlet{margin:0!important}
+        .name .user_name,.navbar-side .side-user .name{font-size: 100%!important}
+        .logout_open{font-size: 100%!important;width:100%;float:left;text-align:center}
+        .indent_but{color:blue;text-decoration:underline;cursor:pointer}
+    </style>
+</head>
+
+<body onload="return openIndents();">
+
+    <div id="wrapper">
+        <nav class="navbar-top" role="navigation">
+
+            <!-- begin BRAND HEADING -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <i class="fa fa-bars"></i> 
+                </button>
+                <div class="navbar-brand">
+                    <a href="#">Bajaj
+                        <!-- <img src="img/Bajaj_Logo.png" class="img-responsive" alt=""> -->
+                    </a>
+                </div>
+            </div>
+            <!-- end BRAND HEADING -->
+
+            <div class="nav-top">
+
+                <!-- begin LEFT SIDE WIDGETS -->
+                <ul class="nav navbar-left">
+                    <li class="tooltip-sidebar-toggle">
+                        <a href="#" id="sidebar-toggle" data-toggle="tooltip" data-placement="right" title="Sidebar Toggle">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <!-- You may add more widgets here using <li> -->
+                </ul>
+                <!-- end LEFT SIDE WIDGETS -->
+
+                
+            </div>
+            <!-- /.nav-top -->
+        </nav>
+        <nav class="navbar-side" role="navigation">
+            <div class="navbar-collapse sidebar-collapse collapse">
+                <ul id="side" class="nav navbar-nav side-nav">
+                    <!-- begin SIDE NAV USER PANEL -->
+                    <li class="side-user hidden-xs">
+                        <img class="img-circle" src="img/profile_img.png">
+                        <p class="welcome">
+                            <i class="fa fa-key"></i> Logged in as
+                        </p>
+                        <p class="name tooltip-sidebar-logout" style="text-align: center; margin-left:0px;">
+                            <span class="user_name">Bajaj</span>
+                             <a style="color: inherit" class="logout_open supply_logout_user" href="#logout" data-toggle="tooltip" data-placement="top" title="Logout" style="">Logout <i class="fa fa-sign-out"></i></a>
+                        </p>
+                        <div class="clearfix"></div>
+                    </li>
+                    <!-- end SIDE NAV USER PANEL -->
+
+                    <!-- end PAGES DROPDOWN -->
+                </ul>
+                <!-- /.side-nav -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper">
+
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-title">                          
+                            <div id="breadcrumb">
+                                <ul class="crumbs">
+                                    <li class="first"><a href="home.html" style="z-index:9;"><span></span>Dashboard</a></li>
+                                    <li class="first"><a href="#" style="z-index:8;"><span></span>Inprogress Indents</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="yom-section" class="portlet" style="border:0">
+                    <div class="row">
+
+                    <!-- Basic Responsive Table -->
+                        <div class="col-lg-6">
+                            <div class="portlet portlet-default">
+                                <div class="portlet-heading">
+                                    <div class="portlet-title">
+                                        <h4>Inprogress Indents</h4>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Indent Number</th>
+                                                    <th>Shipping Name</th>
+                                                    <th>No. of Containers</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="indent_but"><a href="in-indent-details.html">35565907</a></td>
+                                                    <td>Mark</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="indent_but"><a href="in-indent-details.html">35565645</a></td>
+                                                    <td>Jacob Mark Tendu</td>
+                                                    <td>33</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="indent_but"><a href="in-indent-details.html">35565656</a></td>
+                                                    <td>Larry mabs hanry that</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.portlet -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
+    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <script src="js/script-image.js"></script>
+
+    <!-- Logout Notification Box -->
+    <div id="logout">
+
+        <div class="logout-message">
+            <div class="log-body" id="logout-body-img">
+                <p>Select "Logout" below if you are ready to end your current session.</p>
+                <h4 class="user_name">Bajaj</h4><br>
+            </div>
+            <div class="log-btn">
+                <ul class="list-inline">
+                    <li>
+                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
+                    </li>
+                    <li>
+                        <button class="logout_close btn btn-green">Cancel</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /#logout -->
+    <!-- Logout Notification jQuery -->
+    <script src="js/plugins/popupoverlay/logout.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+    <!-- THEME SCRIPTS -->
+    <script src="js/flex.js"></script>
+    <script type="text/javascript">
+        function logout_user() {
+            window.location.href = "index.html";
+        }
+
+    $(document).ready(function(){
+        user = sessionStorage.getItem("username");
+        ug=sessionStorage.getItem('user_group');
+        rm=sessionStorage.getItem('rep_manager');
+        $('.user_name').text(user);
+        var logout_user = '<p><strong>'+user+'</strong></p>';
+        $("#logout-modal-img").append(logout_user);
+    });
+    </script>
+    
+</body>
+
+</html>

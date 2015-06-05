@@ -1,0 +1,118 @@
+{
+    "brand": "Bajaj",
+    "type": "Digital Service Standards",
+    "service_name": "DSS - Dealers Score",
+    "MOnth": "Jan 2015",
+    "legend": {
+        "details": [
+            {
+                "type" : "Closed Service Coupons",
+                "count" : "658",
+                "color" : "#1C92C5"
+            },
+            {
+                "type" : "In Progress Service Coupons",
+                "count" : "597",
+                "color" : "#F39C12"
+            }
+        ],
+        "chart_details": [
+            {
+                "month": "Jan",
+                "process": "100",
+                "manpower": "155",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "391"
+            },
+            {
+                "month": "Feb",
+                "process": "75",
+                "manpower": "148",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "449"
+            },
+            {
+                "month": "March",
+                "process": "50",
+                "manpower": "134",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "410"
+            },
+            {
+                "month": "Apr",
+                "process": "75",
+                "manpower": "101",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "402"
+            },
+            {
+                "month": "May",
+                "process": "50",
+                "manpower": "85",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "361"
+            },
+            {
+                "month": "June",
+                "process": "75",
+                "manpower": "98",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "399"
+            },
+            {
+                "month": "July",
+                "process": "100",
+                "manpower": "65",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "391"
+            },
+            {
+                "month": "Aug",
+                "process": "80",
+                "manpower": "69",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "375"
+            },
+            {
+                "month": "Sept",
+                "process": "251",
+                "manpower": "75",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "552"
+            },
+            {
+                "month": "Oct",
+                "process": "90",
+                "manpower": "75",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "391"
+            },
+            {
+                "month": "Nov",
+                "process": "91",
+                "manpower": "75",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "391"
+            },
+            {
+                "month": "Dec",
+                "process": "148",
+                "manpower": "75",
+                "tools" : "135",
+                "infra" : "91",
+                "overall" : "449"
+            }
+        ]
+    }
+}

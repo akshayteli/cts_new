@@ -1,0 +1,96 @@
+{
+	"regions":[
+		{
+			"region_id":"1",
+			"region_name":"Region 1"
+		},
+		{
+			"region_id":"2",
+			"region_name":"Region 1"
+		},
+		{
+			"region_id":"3",
+			"region_name":"Region 1"
+		},
+		{
+			"region_id":"4",
+			"region_name":"Region 1"
+		}
+	],
+	"rsms":[
+		{
+			"rsm_id":"1",
+			"rsm_name":"RSM Name"
+		},
+		{
+			"rsm_id":"2",
+			"rsm_name":"RSM Name"
+		},
+		{
+			"rsm_id":"3",
+			"rsm_name":"RSM Name"
+		},
+		{
+			"rsm_id":"4",
+			"rsm_name":"RSM Name"
+		},
+		{
+			"rsm_id":"5",
+			"rsm_name":"RSM Name"
+		}
+	],
+	"asms":[
+		{
+			"asm_id":"1",
+			"asm_name":"aSM Name"
+		},
+		{
+			"asm_id":"2",
+			"asm_name":"aSM Name"
+		},
+		{
+			"asm_id":"3",
+			"asm_name":"aSM Name"
+		},
+		{
+			"asm_id":"4",
+			"asm_name":"aSM Name"
+		},
+		{
+			"asm_id":"5",
+			"asm_name":"aSM Name"
+		}
+	],
+	"dealers":[
+		{
+			"dealer_id":"1",
+			"dealer_name":"Dealer Name",
+			"city":"Bangalore",
+			"state":"Karnataka"
+		},
+		{
+			"dealer_id":"2",
+			"dealer_name":"Dealer Name",
+			"city":"Bangalore",
+			"state":"Karnataka"
+		},
+		{
+			"dealer_id":"3",
+			"dealer_name":"Dealer Name",
+			"city":"Bangalore",
+			"state":"Karnataka"
+		},
+		{
+			"dealer_id":"4",
+			"dealer_name":"Dealer Name",
+			"city":"Bangalore",
+			"state":"Karnataka"
+		},
+		{
+			"dealer_id":"5",
+			"dealer_name":"Dealer Name",
+			"city":"Bangalore",
+			"state":"Karnataka"
+		}
+	]
+}

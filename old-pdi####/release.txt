@@ -1,0 +1,23 @@
+/*
+ * Release document - Container Tracking System
+ * CTS - v1.0.4 
+ * ----------------------------------------------------------------------------------------
+ * Author: Basavaraj and Anil
+ * Owner: GladMinds Technologies Pvt Ltd.
+ * Website: http://www.gladminds.co
+ * Date Created: 29th March, 2015
+ * GIT : *************
+ */
+======================================================================================================================
+/* Implementations
+1. Web CTS for Mobile [ apk file ] 
+
+======================================================================================================================
+/* Modification History
+1. All open, inprogress and closed transactions are modified for mobile version
+
+======================================================================================================================
+/* Known Issues (if Any)
+1. All indents are showing in Open and Inprogress pages, we are trying to with group by indents
+
+======================================================================================================================

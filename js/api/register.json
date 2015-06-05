@@ -1,0 +1,85 @@
+{
+    "Form_name": "User Registration",
+    "legend": [
+        {
+            "type": "Personal Information",
+            "fields": [
+                {
+                    "fld_name": "user_image",
+                    "label": "Upload Your Image",
+                    "mandatory": "0",
+                    "input_type": "file",
+                    "span": "12"
+                },
+                {
+                    "fld_name": "first_name",
+                    "label": "First Name",
+                    "mandatory": "1",
+                    "input_type": "text",
+                    "span": "6"
+                },
+                {
+                    "fld_name": "last_name",
+                    "label": "Last Name",
+                    "mandatory": "1",
+                    "input_type": "text",
+                    "span": "6"
+                },
+                {
+                    "fld_name": "phone_no",
+                    "label": "Phone Number",
+                    "mandatory": "1",
+                    "input_type": "text",
+                    "span": "6"
+                },
+                {
+                    "fld_name": "address",
+                    "label": "Address",
+                    "mandatory": "0",
+                    "input_type": "text",
+                    "span": "6"
+                },
+                {
+                    "fld_name": "city",
+                    "label": "City",
+                    "mandatory": "0",
+                    "input_type": "text",
+                    "span": "4"
+                },
+                {
+                    "fld_name": "state",
+                    "label": "State",
+                    "mandatory": "0",
+                    "input_type": "text",
+                    "span": "4"
+                },
+                {
+                    "fld_name": "zip",
+                    "label": "ZIP",
+                    "mandatory": "0",
+                    "input_type": "text",
+                    "span": "4"
+                }
+            ]
+        },
+        {
+            "type": "Contact Details",
+            "fields": [
+                {
+                    "fld_name": "email_address",
+                    "label": "Email Address",
+                    "mandatory": "1",
+                    "input_type": "text",
+                    "span": "12"
+                },
+                {
+                    "fld_name": "website",
+                    "label": "Website",
+                    "mandatory": "0",
+                    "input_type": "text",
+                    "span": "12"
+                }
+            ]
+        }
+    ]
+}

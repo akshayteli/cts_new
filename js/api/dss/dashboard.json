@@ -1,0 +1,273 @@
+{
+    "brand": "Bajaj",
+    "type": "Digital Service Standards",
+    "service_name": "Dashboard",
+    "current_date" : "Jan 21 2015",
+    "objects": [
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "1",
+            "value": "4125654",
+            "name": "# of Vins",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-vin.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "2",
+            "value": "14451",
+            "name": "Service Coupon Closed",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "3",
+            "value": "7278",
+            "name": "Service Coupon Expired",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "488",
+            "id" : "4",
+            "name": "Service Coupon In Progress",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "10",
+            "id" : "5",
+            "name": "Tickets Raised",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "0",
+            "id" : "6",
+            "name": "Tickets In Progress",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "456160",
+            "id" : "7",
+            "name": "DFSC Customers",
+            "bg_name": "purple",
+            "bg_color": "#8e44ad",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "655",
+            "id" : "8",
+            "name": "# of Dealers",
+            "bg_name": "sky_blue",
+            "bg_color": "#2980B9",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "2",
+            "id" : "9",
+            "name": "# of Active Dealers",
+            "bg_name": "sky_blue",
+            "bg_color": "#2980B9",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "5011",
+            "id" : "10",
+            "id" : "",
+            "name": "# of ASCs",
+            "bg_name": "sky_blue",
+            "bg_color": "#2980B9",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "168",
+            "id" : "11",
+            "name": "# of Active ASCs",
+            "bg_name": "sky_blue",
+            "bg_color": "#2980B9",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "294",
+            "id" : "12",
+            "name": "# of Service Advisors",
+            "bg_name": "sky_blue",
+            "bg_color": "#2980B9",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "1",
+            "value": "4125654",
+            "name": "# of Vins",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-vin.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "2",
+            "value": "14451",
+            "name": "Service Coupon Closed",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "3",
+            "value": "7278",
+            "name": "Service Coupon Expired",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "488",
+            "id" : "4",
+            "name": "Service Coupon In Progress",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "10",
+            "id" : "5",
+            "name": "Tickets Raised",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "0",
+            "id" : "6",
+            "name": "Tickets In Progress",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "1",
+            "value": "4125654",
+            "name": "# of Vins",
+            "bg_name": "bringle",
+            "bg_color": "#34495e",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-vin.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "2",
+            "value": "14451",
+            "name": "Service Coupon Closed",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "id" : "3",
+            "value": "7278",
+            "name": "Service Coupon Expired",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "488",
+            "id" : "4",
+            "name": "Service Coupon In Progress",
+            "bg_name": "sky_green",
+            "bg_color": "#054D3F",
+            "img_src": "../images/bike.png",
+            "more_info": "moreinfo-coupons.html"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "10",
+            "id" : "5",
+            "name": "Tickets Raised",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        },
+        {
+            "product": "bike",
+            "model": "KTM",
+            "value": "0",
+            "id" : "6",
+            "name": "Tickets In Progress",
+            "bg_name": "sky_orange",
+            "bg_color": "#F37135",
+            "img_src": "../images/bike.png",
+            "more_info": "more_url"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "brand": "Bajaj",
+    "type": "Digital Service Standards",
+    "header_logo" : "img/Bajaj_Logo.png",
+    "user_name": "Rajib Jena",
+    "profile_image": "img/Rajib_Jena-new.jpg",
+    "user_id" : "3",
+    "bg_color" : "#1C92C5",
+    "font_color" : "#FFF",
+    "legend": [
+        {
+            "option_name": "Dashboard",
+            "option_ID" : "dashboard"
+        }
+    ]
+}

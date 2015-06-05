@@ -1,0 +1,41 @@
+.login{background-color: #fff}
+.portlet-body p{float:left}
+.login-banner{color:#000}
+.portlet-widgets{display:inline-block;text-align:right}
+.portlet-widgets.newuser{float:right}
+.portlet-widgets p{float:right}
+.supply_logos{text-align:center}
+.before_logo img{ padding-right:30px}
+.err_msg{height:24px;visibility:hidden;color:red}
+.alert{padding:3px;margin-bottom:6px}
+.login-banner{margin:10% 0 10% }
+.login-banner img{width:270px;height:70px}
+footer{text-align:center;font-size:10px;margin-top:10%}
+#yom-section{background:#fff!important}
+fieldset{padding:5%}
+#file{ color:green;padding:5px; border:1px dashed #123456;background-color:#f9ffe5}
+#upload{margin-left:45px}
+#noerror{color:green;text-align: left}
+#error{color:red;text-align:left}
+.abcd{text-align:left;position:relative !important;float: left;width:17%;margin:5px}
+.abcd img{height:100px;width:99%;padding:5px;margin:5px;border:1px solid rgb(232, 222, 189);float:left}
+b{color:red}
+.close_img{
+border: medium none !important;
+    height: 20px !important;
+    right: -12px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    top: -2px;
+    width: 20px !important}
+#formget{float:right}
+.upload_wrap{width:51%;float:left;margin:5px 0}
+#submit_button{width:100%;float:left;text-align:right;margin:10px 0 0 0}
+#submit_button .btn-green{width:50%;float:right}
+.add_more{display:none}
+/*.filediv{float:left;width:100%}*/
+
+@media (min-width: 768px){
+    #page-wrapper{min-height:auto !important}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <title>PDI</title>
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pdi-style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body class="login">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-banner text-center">
+                    <h1>
+                        <img src="img/Bajaj_Logo.png">
+                        <!-- <i class="fa fa-gears"></i> Before Supply -->
+                    </h1>
+                </div>
+                <div class="portlet portlet-green">
+                    <div class="portlet-heading login-heading">
+                        <div class="portlet-title">
+                            <h4><strong>One Company.. One Experience</strong>
+                            </h4>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <form method="post" id="logInBFS" onsubmit="return loginCheck()">
+                            <fieldset>
+                              <div class="err_msg">Invalid Credientials</div>
+                                <div class="form-group">
+                                    <input id="Email" class="form-control" placeholder="Dealer ID" name="email" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input id="Passwd" class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <button type="submit" id="signIn" name="signIn" class="btn btn-lg btn-green btn-block">Sign In</button>
+                            </fieldset>                            
+                        </form>
+                    </div>
+                </div>
+                <div class="supply_logos">
+                    <span class="before_logo">
+                        <img src="img/aftersell-small.png">
+                    </span>
+                </div>
+                <footer>
+                    <span>All rights reserved by <a href="http://www.bajajauto.com/">Bajaj Auto Ltd.</a></span><br>
+                    <span>Powered by GladMinds Connect Platform</span><br>
+                    <span>Version 1.0.1</span>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+
+    <!-- PAGE LEVEL PLUGIN SCRIPTS -->
+
+    <!-- THEME SCRIPTS -->
+    <script src="js/flex.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

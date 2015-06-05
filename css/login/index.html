@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themes.startbootstrap.com/flex-admin-v1.2/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jan 2015 07:12:24 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aftersell - DSS</title>
+
+    <!-- GLOBAL STYLES -->
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+
+    <!-- THEME STYLES -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins.css" rel="stylesheet">
+
+    <!-- THEME DEMO STYLES -->
+    <link href="css/demo.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .login {
+            background-color: #fff;
+        }
+
+        body {
+            background: #fff;
+        }
+        .portlet-body p {
+            float: left;
+        }
+
+        .login-banner {
+            color: #000;
+        }
+
+        .portlet-widgets {
+            display: inline-block;text-align: right
+        }
+        .portlet-widgets.newuser{float: right}
+        .portlet-widgets p{float: right;}
+        .supply_logos { text-align: center; }
+        .before_logo img {  padding-right: 30px}
+        .err_msg { height: 24px; }
+        .alert { padding: 3px; margin-bottom: 6px;}
+        .login-banner { margin: 10px 0 40px; }
+          <style type="text/css">
+#loading{
+    display:none;
+}
+#loading, #loading div.bg{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top:0px;
+    left: 0px;
+    z-index: 500000;
+}
+
+#loading div.txt{
+    position: absolute;
+    top:50%;
+    padding:23px 0;
+    width: 100%;
+    font-size: 12px;
+    z-index: 500001;
+    background: url(img/loading.gif) no-repeat 50%;
+    margin-top: -46px;
+}
+
+#loading div.bg{
+    background: #fff;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#error-msg-login-window {
+    display: none;
+    padding: 10px;
+    color: red;
+    text-align: center;
+}
+
+#signIn{
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.loginInput {
+    width: 100%;
+    margin: 20px 0 0px 0 !important;
+}
+  </style>
+    </style>
+
+</head>
+
+<body class="login">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-banner text-center">
+                    <div class="header content clearfix" id="brand_image">
+                        <!-- <img alt="gladminds" class="logo" src="img/Bajaj_Logo.png"> -->
+                  </div>
+                </div>
+                <div class="portlet portlet-green">
+                    <div class="portlet-heading login-heading">
+                        <div class="portlet-title">
+                            <h4><strong>One Company.. One Experience</strong>
+                            </h4>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <form novalidate method="post" id="gaia_loginform" autocomplete="off" >
+                            <div class="text-left alert alert-danger error-msg-login-window">Invalid Credientials</div>
+                            <label class="hidden-label" for="Email">Email</label>
+                            <input id="Email" name="Email" type="email" placeholder="Email" value="" spellcheck="false" class="loginInput">
+                            <label class="hidden-label" for="Passwd">Password</label>
+                            <input id="Passwd" name="Passwd" type="password" placeholder="Password" class="loginInput">
+                            <button type="submit" id="signIn" name="signIn" class="rc-button rc-button-submit">Sign In</button>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="supply_logos">
+                    <span class="after_logo">
+                        <a target="_blank" href="//www.gladminds.co/#products"><img src="img/aftersell-small.png"></a>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>All rights reserved by <a href="//www.gladminds.co/">GladMinds</a></span><br>
+        <span>Powered by <a href="//www.gladminds.co/#products" target="_blank">GladMinds Connect Platform</a></span><br>
+        <span>Version 2.0.7</span>
+    </footer>
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+
+    <!-- PAGE LEVEL PLUGIN SCRIPTS -->
+
+    <!-- THEME SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.md5.min.js"></script>
+    <script type="text/javascript" src="js/validations.js"></script>
+    <script type="text/javascript" src="js/inc.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+</body>
+</html>

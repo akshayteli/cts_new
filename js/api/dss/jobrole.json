@@ -1,0 +1,82 @@
+[
+    {
+        "job_role": "Works Manager",
+        "max_score": "20",
+        "formula":""
+    },
+    {
+        "job_role": "Service Advisors",
+        "max_score": "20",
+        "formula":""
+    },
+    {
+        "job_role": "Cust.Care.Exe",
+        "max_score": "15",
+        "formula":""
+    },
+    {
+        "job_role": "Floor Supervisors",
+        "max_score": "20",
+        "formula":""
+    },
+    {
+        "job_role": "Warranty Supervisor",
+        "max_score": "15",
+        "formula":""
+    },
+    {
+        "job_role": "PM Technicians",
+        "max_score": "50",
+        "formula":""
+    },
+    {
+        "job_role": "Expert Technicians",
+        "max_score": "15",
+        "formula":""
+    },
+    {
+        "job_role": "Final Inspector",
+        "max_score": "20",
+        "formula":""
+    },
+    {
+        "job_role": "Product specialist",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "Spares Manager/Incharge",
+        "max_score": "15",
+        "formula":""
+    },
+    {
+        "job_role": "Spare parts picker",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "Washing Supervisor",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "Washing Members",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "PDI Supervisor",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "PDI technicians",
+        "max_score": "10",
+        "formula":""
+    },
+    {
+        "job_role": "Skilled / Trained Manpower Availability",
+        "max_score": "250",
+        "formula":""
+    }
+]

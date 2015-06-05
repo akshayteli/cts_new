@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aftersell - DSS</title>
+
+    <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
+    <link href="css/plugins/pace/pace.css" rel="stylesheet">
+
+    <!-- GLOBAL STYLES - Include these on every page. -->
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    
+    <link href="css/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+
+    <!-- THEME STYLES - Include these on every page. -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins.css" rel="stylesheet">
+
+    <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
+    <link href="css/demo.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class= "main-menu-page-wrapper">
+
+        <!-- begin TOP NAVIGATION -->
+        <nav class="navbar-top" role="navigation" id="mob-top-navbar">
+            <!-- begin BRAND HEADING -->
+            <div class="navbar-header" id="mob-navbar-header">
+                <div class="mobile-topmenu-btn">
+                    <button type="button" class="navbar-toggle pull-left menuPage-toggleBtn" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- <a href="menu.html"><img class="img-responsive pull-right" id="header-home-logo" src="img/home.png" alt="home"></a> -->
+                    <!-- <a href="#" class="menuPage-logout-btn-mob">Logout</a> -->
+                    <a data-toggle="modal" data-target="#logout-window" class="bajaj-user-logout pull-right" style="font-size: 14px; color: rgb(255, 255, 255);" href="#logout" data-placement="top" title="Logout">Logout <i class="fa fa-sign-out"></i></a>
+                </div>
+                                  
+            </div>
+            <!-- end BRAND HEADING -->
+
+            <div class="nav-top">
+
+                <!-- begin LEFT SIDE WIDGETS -->
+                <ul class="nav navbar-left top-nav-listElement">
+                    <li class="tooltip-sidebar-toggle">
+                        <img id="bajaj-logo" class="img-responsive" src="" alt="Bajaj">
+                    </li>
+                    <li class="tooltip-sidebar-toggle bajaj-toggle-btn">
+                        <a href="#" id="sidebar-toggle" data-toggle="tooltip" data-placement="right" title="Sidebar Toggle">
+                            <i class="fa fa-bars bajaj-slide-menu"></i>
+                        </a>
+                    </li>
+                    <li class="home-btn-liElelment">
+                        <a href="menu.html">
+                            <img src="img/home.png" alt="Home" class="img-responsive pull-right go-home-btn">
+                        </a>
+                    </li>
+                    <!-- You may add more widgets here using <li> -->
+                </ul>
+                <!-- end LEFT SIDE WIDGETS -->
+            </div>
+            <!-- /.nav-top -->
+        </nav>
+        <!-- /.navbar-top -->
+
+<!-- ================== TOP Navbar (new) =========================== -->
+
+    <nav class="navbar navbar-default" style="display:none;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img id="bajaj-logo-mob" class="img-responsive" src="img/Bajaj_Logo.png" alt="Bajaj">
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+        <!-- begin SIDE NAVIGATION -->
+        <nav class="navbar-side" role="navigation">
+            <div class="navbar-collapse sidebar-collapse collapse">
+                <ul id="side" class="nav navbar-nav side-nav bajaj-sidetab bajaj-side-menuStack" style="border-right: 1px solid #848484;">
+                    
+                </ul>
+                <!-- /.side-nav -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- /.navbar-side -->
+        <!-- end SIDE NAVIGATION -->
+
+        <!-- begin MAIN PAGE CONTENT -->
+        <div id="page-wrapper">
+
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-lg-12 menu-page-mob">
+                        <div class="page-title">
+                            <h1>Welcome, <span id="user-login-name"></span></h1>
+                        </div>
+                    </div>
+                </div>                
+                <div id="mainMenu-area" class="clearfix"></div>
+            </div>
+            <!-- /.page-content -->
+
+        </div>
+
+        <footer class="bajaj-footer">
+            <span>All rights reserved by Bajaj Auto. Ltd.</span><br>
+            <span>Powered by <a href="//www.gladminds.co/#products" target="_blank">GladMinds Connect Platform</a></span><br>
+            <span>Version 2.0.7</span>
+        </footer>
+        <!-- /#page-wrapper -->
+        <!-- end MAIN PAGE CONTENT -->
+
+        
+
+
+    </div>
+
+
+    <!-- /#wrapper -->
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
+    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <!-- Logout Notification Box -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="logout-window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header1">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            
+          </div>
+          <div class="modal-body" id="logout-modal-img">
+                <h4 class="modal-title" id="myModalLabel">Select "Logout" below if you are ready
+to end your session.</h4>
+          </div>
+          <div class="modal-footer confirm-log-btns">
+            <button type="button" id="logout-user" class="btn logout-window-btns">Logout</button>
+            <button type="button" class="btn logout-window-btns" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- /#logout -->
+    <script src="js/plugins/pace/pace.js"></script>
+    <!-- Logout Notification jQuery -->
+    <script src="js/plugins/popupoverlay/logout.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+
+    <!-- jQuery Vector Map -->
+    <script src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/plugins/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" src="js/plugins/countUp.min.js"></script>
+
+    <!-- THEME SCRIPTS -->
+    <script src="js/flex.js"></script>
+
+    <!-- scroll file-->
+    <script type="text/javascript" src="js/plugins/jquery.scrollTo.min.js"></script>
+
+    <script type="text/javascript" src="js/active.js"></script>
+
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+    <!--<script type="text/javascript" src="js/dfsc.js"></script>-->
+    <script type="text/javascript" src="js/mainMenu.js"></script>
+    <script src="js/inc.js"></script>
+
+
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+</body>
+</html>

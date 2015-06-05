@@ -1,0 +1,89 @@
+{
+    "brand": "Bajaj",
+    "type": "Dealer Audit Dashboard",
+    "dealer_name" : "Subrath",
+    "dealer_id" : "5689",
+    "audit_date" : "15-01-2015",
+    "details": [
+        {
+            "type_name": "Process",
+            "type_id": "1",
+            "img_src": "img_url",
+            "more_info": "audit-questionnaire.html",
+            "legends": [
+                {
+                    "type": "Adherence",
+                    "score": "0"
+                },
+                {
+                    "type": "Total Score",
+                    "score": "500"
+                },
+                {
+                    "type": "Dealer Score",
+                    "score": "0"
+                }
+            ]
+        },
+        {
+            "type_name": "Manpower",
+            "type_id": "2",
+            "img_src": "img_url",
+            "more_info": "URL",
+            "legends": [
+                {
+                    "type": "Adherence",
+                    "score": "0"
+                },
+                {
+                    "type": "Total Score",
+                    "score": "250"
+                },
+                {
+                    "type": "Dealer Score",
+                    "score": "0"
+                }
+            ]
+        },
+        {
+            "type_name": "Tools and Equipment",
+            "type_id": "3",
+            "img_src": "img_url",
+            "more_info": "URL",
+            "legends": [
+                {
+                    "type": "Adherence",
+                    "score": "0"
+                },
+                {
+                    "type": "Total Score",
+                    "score": "150"
+                },
+                {
+                    "type": "Dealer Score",
+                    "score": "0"
+                }
+            ]
+        },
+        {
+            "type_name": "Infrastcture and CI Element",
+            "type_id": "2",
+            "img_src": "img_url",
+            "more_info": "URL",
+            "legends": [
+                {
+                    "type": "Adherence",
+                    "score": "0"
+                },
+                {
+                    "type": "Total Score",
+                    "score": "100"
+                },
+                {
+                    "type": "Dealer Score",
+                    "score": "0"
+                }
+            ]
+        }
+    ]
+}

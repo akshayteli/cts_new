@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <title>CTS - Closed Transactions</title>
+
+    <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
+    <link href="css/plugins/pace/pace.css" rel="stylesheet">
+    <script src="js/plugins/pace/pace.js"></script>
+
+    <!-- GLOBAL STYLES - Include these on every page. -->
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+
+    <!-- THEME STYLES - Include these on every page. -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">
+    
+    <link href="css/plugins.css" rel="stylesheet">
+
+    <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
+    <link href="css/demo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/cts-style.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        #proInd-table_length,.dataTables_length,#openIND-table_info,#openIND-table_paginate{display: none}
+        #openIND-table_filter{width:100%}
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- begin TOP NAVIGATION -->
+        <nav class="navbar-top" role="navigation">
+
+            <div class="nav-top">
+
+                <!-- begin LEFT SIDE WIDGETS -->
+               <ul class="nav navbar-right">
+                    <li>
+                        <a class="logout_open" href="#logout" data-popup-ordinal="0" id="open_20807872">
+                            <i class="fa fa-sign-out"></i> Logout
+                            <strong id="username"></strong>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- end LEFT SIDE WIDGETS -->
+            </div>
+            <!-- /.nav-top -->
+        </nav>
+
+        <!-- begin MAIN PAGE CONTENT -->
+        <div id="page-wrapper">
+
+            <div class="page-content">
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="portlet portlet-default">
+                            <div class="portlet-heading" style=""><a style="float:left;width:10%;padding:10px 0;font-size:12px" href="home.html">Go Back</a>
+                                <div class="portlet-title" style="width:80%;text-align:center">
+                                    <h4>Closed Transactions</h4>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="control-form" style="margin:10px 0">
+                                <form action="" method="POST" name="closedDate" id="closedDate">
+
+                                    <div class="col-lg-2 col-sm-2">From Date<div id="fromDate">
+                                                        <input name="txtFromDate" id="txtFromDate" class="form-control" placeholder="DD-MM-YYYY" type="text">
+                                                    </div>
+                                    </div>                                
+                                    <div class="col-lg-2 col-sm-2">To Date
+                                        <div id="toDate">
+                                                        <input class="form-control" name="txtToDate" id="txtToDate" placeholder="DD-MM-YYYY" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2"><br>
+                                        <button type="submit" style="margin-top:4px;visibility:hidden">GO</button>
+                                    </div>                                    
+                                    <div class="col-lg-6 col-sm-6">
+                                       <label class="col-sm-6 control-label">Select Transporter Id</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control">
+                                                <option selected disabled>Select Transporter</option>
+                                                <option value="sid1">112248</option>
+                                                <option value="sid2">101881</option>
+                                                <option value="sid3">111521</option>
+                                                <option value="sid4">113075</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </form>
+                            </div>
+                                    <br>
+                            <div class="portlet-body">
+                                <div class="table-responsive">
+                                    <div id="openIND-table_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                                    </div>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
+                            <!-- /.portlet-body -->
+                        </div>
+                        <!-- /.portlet -->
+
+                    </div>
+                    <!-- /.col-lg-12 -->
+
+                </div>
+
+            </div>
+            <!-- /.page-content -->
+            <footer>
+                <span>All rights reserved by <a href="http://www.bajajauto.com/">Bajaj Auto Ltd.</a></span><br>
+                <span>Powered by GladMinds Connect Platform</span><br>
+                <span>Version 0.0.1</span>
+            </footer>
+
+
+        </div>
+        <!-- /#page-wrapper -->
+        <!-- end MAIN PAGE CONTENT -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- GLOBAL SCRIPTS -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
+    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+    <!-- Logout Notification Box -->
+    <div id="logout">
+        <div class="logout-message">
+            <img class="img-circle img-logout" alt="">
+            <h3>
+                <i class="fa fa-sign-out text-green"></i> Ready to go?
+            </h3>
+            <p>Select "Logout" below if you are ready<br> to end your current session.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#" id="btnLogOut" class="btn btn-green">
+                        <strong>Logout</strong>
+                    </a>
+                </li>
+                <li>
+                    <button class="logout_close btn btn-green">Cancel</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /#logout -->
+    <!-- Logout Notification jQuery -->
+    <script src="js/plugins/popupoverlay/logout.js"></script>
+    <!-- HISRC Retina Images -->
+    <script src="js/plugins/hisrc/hisrc.js"></script>
+    <script src="js/flex.js"></script>
+    <script type="text/javascript" src="js/datatables/jquery.dataTables.js"></script>
+    <script src="js/login.js"></script>
+    <script type="text/javascript">
+        var v="";
+        v=sessionStorage.getItem("username");
+        if(v==null){
+            window.location.href="index.html";
+        }
+        $("#username").text(v);
+        $(document).ready(function(){
+            closedPage();
+            $('#closedIND-table').dataTable({
+                "iDisplayLength": 10
+            });
+            $('#txtFromDate').datepicker({
+                format: "dd-mm-yyyy",
+                endDate: '+0d',
+                autoclose: true
+            });
+            $('#txtToDate').datepicker({
+                format: "dd-mm-yyyy",
+                endDate: '+0d',
+                autoclose: true
+            });
+            $('#btnLogOut').click(function(){
+                v=null;
+                sessionStorage.setItem('username',v);
+                window.location.href="index.html";
+            });
+        });
+    </script>
+    <script src="js/bootstrap-datepicker.js"></script>
+</body>
+</html>

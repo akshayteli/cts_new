@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aftersell - DSS</title>
+
+    <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
+    <link href="css/plugins/pace/pace.css" rel="stylesheet">
+
+    <!-- GLOBAL STYLES - Include these on every page. -->
+    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+
+
+    <!-- THEME STYLES - Include these on every page. -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+
+<script src="js/plugins/pace/pace.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="js/inc.js"></script>
+<script language="javascript">
+  
+$(document).ready(function(){  
+
+    access_token = getParameterByName('access_token');
+    user_id = getParameterByName('id');
+
+    var userInfo = {"access_token":access_token,"userID":user_id};
+    //console.log(userInfo);
+
+    $.ajax({
+        url : 'apis/dss/index.php?action=loginCheckExt',
+        type : 'POST',
+        dataType : 'json',
+        data : userInfo,
+        success : function(userData, status) {
+                    // console.log(userData);
+                if(userData.status=="1"){
+                    localStorage.setItem('user_name', userData.name);
+                    localStorage.setItem('username', userData.username)
+                    localStorage.setItem('user_id', userData.userid);
+                    localStorage.setItem('user_type', userData.role);
+                    localStorage.setItem('area', userData.area);
+                    localStorage.setItem("authUser", userData.user_type);
+                    localStorage.setItem("rec_id", userData.rec_id);
+
+
+                    if(userData.img_url=="")
+                        localStorage.setItem("profile_img","img/profile_pics/placeholder.jpg");
+                    else
+                        localStorage.setItem("profile_img", userData.img_url);
+                    
+                    localStorage.setItem("username", userData.username);
+
+                    document.write("<h1 style='text-align:center;font-weight:bold;font-family: arial,verdana;font-size:14px;display:block;color:green;'>Redirecting...</h1>");
+
+                    window.location.href = "dss.html"; 
+                }
+                else{
+                    document.write("<h1 style='text-align:center;font-weight:bold;font-family: arial,verdana;font-size:14px;display:block;color:red;'>Invalid Login</h1>");
+                }
+                    hideLoading();
+
+                return false;
+        },
+        error : function(e) {
+            console.log(e)
+        }
+    })
+});
+
+</script>
+
+
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+
+</body>
+</html>

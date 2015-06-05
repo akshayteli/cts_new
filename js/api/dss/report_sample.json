@@ -1,0 +1,80 @@
+{
+
+	"report_name":"Dealership Service Standard-Summary",
+	"rsm_code":"12345",
+	"rsm_name":"RSM Name",
+	"auditor_code":"9032932",
+	"auditor_name":"Auditor Name",
+	"dealer_code":"13245",
+	"dealer_name":"Dealer Name",
+	"dealer_city":"City Name",
+	"from_date":"2015-03-24",
+	"to_date":"2015-12-30",
+	"audit_sections":[
+		{
+			"key":"process",
+			"process_name":"Process",
+			"details": ["Work Allocation","Vehicle Receiving","Washing","Work Allocation","P M SOP Adherence","Repair SOP Adherence","Final Inspection","Vehicle Delivery","Post Service Follow up ","Repeat Job Handling","Customer Complaint Management","Direct Customer Feedback","PDI","Warranty & Free Service","Spare Parts Management","Product Quality Information Management"]
+		},
+		{
+			"key":"manpower",
+			"process_name":"Manpower",
+			"details":[]
+		},
+		{
+			"key":"tools",
+			"process_name":"Tools & Equipment",
+			"details":[]
+		},
+		{
+			"key":"i_ci",
+			"process_name":"Infrastructure & CI Elements",
+			"details":[]
+		}
+	],
+	"audit_data":[
+		{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","30","90","90","90","90","90","90","90","90","90","90","90","10","20","40"],
+			"manpower_details":["20"],
+			"tools_details":["20"],
+			"i_ci_details":["10"]
+		},{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","80","90","90","90","90","90","90","90","90","90","90","90","10","20","40"],
+			"manpower_details":["20"],
+			"tools_details":["20"],
+			"i_ci_details":["20"]
+		},{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","30","90","90","90","90","90","90","90","90","90","90","90","10","20","40"],
+			"manpower_details":["20"],
+			"tools_details":["20"],
+			"i_ci_details":["20"]
+		},{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","30","90","90","90","09","90","90","90","90","90","90","90","10","20","40"],
+			"manpower_details":["20"],
+			"tools_details":["20"],
+			"i_ci_details":["20"]
+		},{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","20","90","90","90","90","90","90","90","90","99","90","90","10","20","40"],
+			"manpower_details":["20"],
+			"tools_details":["20"],
+			"i_ci_details":["20"]
+		},{
+			"audited_by":"Akshay",
+			"audited_date":"11th Jan 2015",
+			"process_details":["20","50","90","90","90","90","90","90","90","90","90","90","90","10","20","99"],
+			"manpower_details":["20"],
+			"tools_details":["90"],
+			"i_ci_details":["50"]
+		}
+	]
+}

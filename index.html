@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta charset="utf-8">
+        <meta content="width=300, initial-scale=1" name="viewport">
+        <meta name="description" content="">
+        <title>Bajaj - CTS</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <style type="text/css">
+            #error-msg{visibility:hidden;color:red}
+            @media screen and (max-width: 580px){
+                .bajaj-header-bar.centered .header .logo {
+                    margin: 5% auto 5%;
+                }
+                .signin-card{margin-top:0}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="bajaj-header-bar centered">
+                <div class="header content clearfix" id="brand_image">
+                </div>
+            </div>
+
+            <div class="main content clearfix">
+
+                <div class="card signin-card clearfix">
+                    <h1 class="login-aftersell-title">
+                        One Company...One Experience
+                    </h1>
+                    <form novalidate method="post" id="gaia_loginform" onsubmit="return loginCheck()" autocomplete="off">
+                        <div id="error-msg">Invalid Credientials</div>
+                        <label class="hidden-label" for="Email">Email</label>
+                        <input id="Email" name="Email" type="email" placeholder="Email" value="" spellcheck="false" class="">
+                        <label class="hidden-label" for="Passwd">Password</label>
+                        <input id="Passwd" name="Passwd" type="password" placeholder="Password" class="">
+                        <button type="submit" id="signIn" name="signIn" class="rc-button rc-button-submit">Sign In</button>
+                        <!-- <div class="forgot-pwd">
+                            <label class="remember">
+                                <a href="#">
+                                    Forgot Password?
+                                </a>
+                            </label>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="text-center aftersell-logo">
+                    <img class="profile-img after-sell img-circle img-responsive" src="img/aftersell.png" alt="aftersell">
+                </div>
+                <div class="oneApp-bajaj">
+                    <p class="create-account">
+                        <a id="link-signup" class="new-user-reg" href="">
+                            Create an account
+                        </a>
+                    </p>
+                </div>
+
+                <footer>
+                    <span>All rights reserved by Bajaj Auto Ltd</a></span><br>
+                    <span>Powered by <a href="//www.gladminds.co/#products" target="_blank">GladMinds Connect Platform</a></span><br>
+                    <span>Version 2.0.7</span>
+                </footer>
+
+            </div>
+
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.md5.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <div id="loading">
+            <div class="txt"></div>
+            <div class="bg"></div>
+        </div>
+    </body>
+</html>

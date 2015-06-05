@@ -1,0 +1,39 @@
+{
+    "brand": "Bajaj",
+    "type": "Digital Service Standards",
+    "Service_name": "Saved Audits",
+    "bg_color" : "#1C92C5",
+    "font_color" : "#FFF",
+    "columns" : [
+        {
+            "header_name" : "Dealer Code"
+        },
+        {
+            "header_name" : "Dealer Name"
+        },
+        {
+            "header_name" : "Audited Date"
+        },
+        {
+            "header_name" : "Total Score"
+        }
+    ],
+    "details": [
+        {
+            "dealer_id": "5564684",
+            "dealer_name" : "Reuiik",
+            "audited_date": "869875",
+            "total_score": "80",
+            "more_info": "1",
+            "info_path": "url"           
+        },
+        {
+            "dealer_id": "1587874",
+            "dealer_name" : "Reuiik",
+            "audited_date": "5762187",
+            "total_score": "100",
+            "more_info": "1",
+            "info_path": "url"
+        }
+    ]
+}

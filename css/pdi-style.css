@@ -1,0 +1,52 @@
+.login{background-color: #fff}
+.portlet-body p{float:left}
+.login-banner{color:#000}
+.portlet-widgets{display:inline-block;text-align:right}
+.portlet-widgets.newuser{float:right}
+.portlet-widgets p{float:right}
+.supply_logos{text-align:center}
+.before_logo img{ padding-right:30px}
+.err_msg{height:24px;visibility:hidden;color:red}
+.alert{padding:3px;margin-bottom:6px}
+.login-banner{margin:10% 0 10% }
+.login-banner img{width:270px;height:70px}
+footer{text-align:center;font-size:10px;margin-top:10%}
+#yom-section.portlet{background:#fff!important;border:none!important}
+fieldset{padding:5%}
+#file{ color:green;padding:5px; border:1px dashed #123456;background-color:#f9ffe5}
+#upload{margin-left:45px}
+#noerror{color:green;text-align: left}
+#error{color:red;text-align:left}
+.abcd{text-align:left;position:relative !important;float: left;width:17%;margin:5px}
+.abcd img{height:100px;width:99%;padding:5px;margin:5px;border:1px solid rgb(232, 222, 189);float:left}
+b{color:red}
+.close_img{
+border: medium none !important;
+    height: 20px !important;
+    right: -12px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    top: -2px;
+    width: 20px !important}
+#formget{float:right}
+.upload_wrap{width:51%;float:left;margin:5px 0}
+#submit_button{width:100%;float:left;text-align:right;margin:10px 0 0 0}
+#submit_button .btn-green{width:50%;float:right}
+.add_more{display:none}
+/*.filediv{float:left;width:100%}*/
+#side{border-style:solid;border-color:#ccc;border-width:0 1px 1px 0}
+#other_defect{display:none}
+.portlet-body table{width:100%}
+.portlet-body table tr th,.portlet-body table tr td{width:25%;white-space: normal !important}
+.page-title h1{padding:0}
+.portlet-body .table-responsive table tr .pdi_view_ad{color:blue!important;cursor:pointer!important}
+.portlet-body .table-responsive table tr .pdi_view_ad:hover{text-decoration:underline}
+#side .side-user{padding:5%!important}
+
+@media (max-width: 767px){
+	.table-responsive>.table>thead>tr>th, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tfoot>tr>td{white-space:normal!important;word-wrap: break-word!important;}
+}
+@media (min-width: 768px){
+    #page-wrapper{min-height:auto !important}
+}
