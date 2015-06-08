@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.startbootstrap.com/flex-admin-v1.2/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jan 2015 07:11:45 GMT -->
 <head>    
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -120,43 +105,7 @@
                     </div>
                 </div>
                 <div id="yom-section" class="portlet" style="border:0">
-                    <div class="row">
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="circle-tile">
-                                <a href="#">
-                                    <div class="circle-tile-heading dark-blue">
-                                        <i class="fa fa-tasks fa-fw fa-3x"></i>
-                                    </div>
-                                </a>
-                                <div class="circle-tile-content dark-blue">
-                                    <div class="circle-tile-description text-faded">
-                                        Open Indents
-                                    </div>
-                                    <div id="count_open" class="circle-tile-number text-faded">
-                                        3
-                                    </div>
-                                    <a href="open-indents.html" class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="circle-tile">
-                                <a href="#">
-                                    <div class="circle-tile-heading green">
-                                        <i class="fa fa-shopping-cart fa-fw fa-3x"></i>
-                                    </div>
-                                </a>
-                                <div class="circle-tile-content green">
-                                    <div class="circle-tile-description text-faded">
-                                        In-progress Indents
-                                    </div>
-                                    <div id="count_in" class="circle-tile-number text-faded">
-                                        3
-                                    </div>
-                                    <a href="inpogress-indents.html" class="circle-tile-footer" onclick="return inproIndents();">More Info <i class="fa fa-chevron-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row" id="cts-dashboard">
                     </div>  
                 </div>
             </div>
@@ -181,7 +130,7 @@
             <div class="log-btn">
                 <ul class="list-inline">
                     <li>
-                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
+                        <button type="button" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
                     </li>
                     <li>
                         <button class="logout_close btn btn-green">Cancel</button>
@@ -197,11 +146,9 @@
     <script src="js/plugins/hisrc/hisrc.js"></script>
     <!-- THEME SCRIPTS -->
     <script src="js/flex.js"></script>
+    <script src="js/home.js"></script>
     <script type="text/javascript">
-        function logout_user() {
-            window.location.href = "index.html";
-        }
-
+        
     $(document).ready(function(){
         user = sessionStorage.getItem("username");
         $('.user_name').text(user);

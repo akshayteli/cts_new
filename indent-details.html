@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.startbootstrap.com/flex-admin-v1.2/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jan 2015 07:11:45 GMT -->
 <head>    
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -51,7 +36,7 @@
     </style>
 </head>
 
-<body onload="return openIndents();">
+<body>
 
     <div id="wrapper">
         <nav class="navbar-top" role="navigation">
@@ -131,7 +116,7 @@
                         <div class="col-lg-8">
                             <div class="page-title">
                                 <div style="float:left">
-                                    <small id="ind_num">Indent No.:35565907</small>
+                                    <small id="ind_num">Indent No : <span class="txtIndentNo"></span></small>
                                 </div>
                                 
                                 <div style="text-align:right;margin-bottom:10px">
@@ -143,7 +128,7 @@
                     <div class="row">
                     <!-- Basic Responsive Table -->
                         <div class="col-lg-8">
-                            <div class="portlet portlet-default">
+                            <div class="portlet portlet-default clearfix">
                                 <div class="portlet-heading">
                                     <div class="portlet-title">
                                         <h4>Indent Details</h4>
@@ -152,30 +137,16 @@
                                 </div>
                                 <div class="portlet-body">
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table table-striped table-bordered table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>LR Number</th>
                                                     <th>Vehicle Number</th>
-                                                    <th>Container Type</th>
+                                                    <th>No of Containers</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="btn-lr-detail" data-toggle="modal" data-target="#flexModal">LR565907</td>
-                                                    <td>KA-04-H-4566</td>
-                                                    <td>10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="btn-lr-detail" data-toggle="modal" data-target="#flexModal">LR565645</td>
-                                                    <td>MH-02-G-4566</td>
-                                                    <td>33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="btn-lr-detail" data-toggle="modal" data-target="#flexModal">LR565656</td>
-                                                    <td>KA-22-J-4566</td>
-                                                    <td>1</td>
-                                                </tr>
+                                            <tbody id="Lrdata">
+                                                
                                             </tbody>
                                         </table>
                                     </div>
@@ -209,7 +180,7 @@
                         <div class="col-lg-12">
                                 <label for="textInput" class="col-sm-4 control-label">Indent No.:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="indNumDisp" value="35565907" disabled="">
+                                    <input type="text" class="form-control" id="indNumDisp" value="" disabled="">
                                 </div>
                         </div>
                     </div>
@@ -217,7 +188,7 @@
                         <div class="col-lg-12">
                                 <label for="textInput" class="col-sm-4 control-label">LR No.:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="indNumDisp" value="LR565907" disabled="">
+                                    <input type="text" class="form-control" id="LRNumDisp" value="" disabled="">
                                 </div>
                         </div>
                     </div>
@@ -225,7 +196,7 @@
                         <div class="col-lg-12">
                                 <label for="contNum" class="col-sm-4 control-label">Container No.:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" name="contNum" class="form-control" id="contNum" placeholder="Example:'ABCD1234567'"><small>First 4 characters than 7 digits</small>
+                                    <input type="text" name="contNum" class="form-control" id="contNum" placeholder="Example:'ABCD1234'" maxlength="8"><small>First 4 characters than 7 digits</small>
                                 </div>
                         </div>
                     </div>
@@ -240,7 +211,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-green">Save</button>
+                    <button type="submit" class="btn btn-green" id="saveLrDetails">Save</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -275,6 +246,7 @@
     <script src="js/plugins/hisrc/hisrc.js"></script>
     <!-- THEME SCRIPTS -->
     <script src="js/flex.js"></script>
+    <script src="js/indent-details.js"></script>
     <script type="text/javascript">
         function logout_user() {
             window.location.href = "index.html";
@@ -289,7 +261,10 @@
         $("#logout-modal-img").append(logout_user);
     });
     </script>
-    
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
 </body>
 
 </html>

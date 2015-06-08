@@ -59,8 +59,9 @@ function  loginCheck(){
     // var producturl="http://api.afterbuy.co/afterbuy/v1/consumers/product-details/?access_token=<>";
     var un=$('#Email').val();
     var pw=$('#Passwd').val();
-    var formData={"login_id": un,"password":pw};
+    var formData={"username": un,"password":pw};
     serilizedData = JSON.stringify(formData);
+    console.log(serilizedData)
     if(un=="" || pw==""){
         $('#error-msg').css('visibility','visible');
         $("#Passwd,#Email").val('');
@@ -72,12 +73,12 @@ function  loginCheck(){
         $.ajax({
             type: 'POST', 
             url:'//qa.bajaj.gladminds.co/v1/gm-users/login/', 
-            data:{"login_id": un,"password":pw}, 
+            data:serilizedData, 
             dataType: 'json',
             success: function (log_data, status) {
-                sessionStorage.setItem('username',log_data.login_id);
-                sessionStorage.setItem('user_group',log_data.user_group);
-                sessionStorage.setItem('rep_manager',log_data.rep_manager_id);
+                localStorage.setItem('access_token', log_data.access_token)
+                // sessionStorage.setItem('user_group',log_data.user_group);
+                sessionStorage.setItem('user_id',log_data.user_id);
                 // alert(log_data.login_id+","+log_data.user_group+","+log_data.rep_manager_id);
                 window.location = "home.html";
                     

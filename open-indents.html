@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from themes.startbootstrap.com/flex-admin-v1.2/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jan 2015 07:11:45 GMT -->
 <head>    
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -49,7 +34,7 @@
     </style>
 </head>
 
-<body onload="return openIndents();">
+<body>
 
     <div id="wrapper">
         <nav class="navbar-top" role="navigation">
@@ -127,7 +112,7 @@
 
                     <!-- Basic Responsive Table -->
                         <div class="col-lg-6">
-                            <div class="portlet portlet-default">
+                            <div class="portlet portlet-default clearfix">
                                 <div class="portlet-heading">
                                     <div class="portlet-title">
                                         <h4>Open Indents</h4>
@@ -136,7 +121,7 @@
                                 </div>
                                 <div class="portlet-body">
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table table-striped table-bordered table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>Indent Number</th>
@@ -144,22 +129,7 @@
                                                     <th>No. of Containers</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="indent_but"><a href="indent-details.html">35565907</a></td>
-                                                    <td>Mark</td>
-                                                    <td>10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="indent_but"><a href="indent-details.html">35565645</a></td>
-                                                    <td>Jacob Mark Tendu</td>
-                                                    <td>33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="indent_but"><a href="indent-details.html">35565656</a></td>
-                                                    <td>Larry mabs hanry that</td>
-                                                    <td>1</td>
-                                                </tr>
+                                            <tbody id="indents_table">
                                             </tbody>
                                         </table>
                                     </div>
@@ -192,7 +162,7 @@
             <div class="log-btn">
                 <ul class="list-inline">
                     <li>
-                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
+                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns">Logout</button>
                     </li>
                     <li>
                         <button class="logout_close btn btn-green">Cancel</button>
@@ -208,6 +178,7 @@
     <script src="js/plugins/hisrc/hisrc.js"></script>
     <!-- THEME SCRIPTS -->
     <script src="js/flex.js"></script>
+    <script src="js/open-indents.js"></script>
     <script type="text/javascript">
         function logout_user() {
             window.location.href = "index.html";
@@ -222,6 +193,11 @@
         $("#logout-modal-img").append(logout_user);
     });
     </script>
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+
     
 </body>
 

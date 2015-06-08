@@ -44,6 +44,7 @@ $(document).ready(function(){
         $("#bajaj-todays-date").text(today);
 
         $("#logout-user").click(function(){
+          alert("log")
             logoutUser();
         });
 
@@ -84,6 +85,7 @@ function logoutUser(){
         hideLoading();
         // bootbox.alert(data.message,function(){
         localStorage.clear();
+
         window.location.href = "index.html";
         // });        
       },

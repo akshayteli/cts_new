@@ -1,0 +1,37 @@
+group = [Admin
+RSM
+ASM
+Dealer
+ASC];
+
+Feeds-
+Date as 1st col - dd-mm-yy hh:mm
+status remove
+UCN recovery (API creation)- for group
+coupons trends - based on role.
+SMS trends only for Admin.
+feed logs only for admin rkjena.
+coupon trends data no aval after 14th March.
+
+
+================================================
+
+1. epc - VIN search - DONE
+2. Mysql Trigger setup - DONE
+3. PRR-admin APIs - In Progress
+ ==============================================
+EPC - 
+1. New header implementation
+2. Login page - copy DSS
+3. VIN search - final implementation discussion
+4. bajajautomcepc, bajajautocvepc, ....... => security discussion pending 
+5. Special character issue on sbom table - client side
+6. Go previsous and next button on bom page.
+7. Mobile view discussion (since image does not support resizing).
+8. CV - Mapping issue. In Progresss (High Priority)
+9. "ECO" button - below the table.
+10. 
+
+
+Dashboard - Maxima (after no-46)
+Battery - Seat and hood frame compact - change name
