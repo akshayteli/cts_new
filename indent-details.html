@@ -81,7 +81,7 @@
                             <i class="fa fa-key"></i> Logged in as
                         </p>
                         <p class="name tooltip-sidebar-logout" style="text-align: center; margin-left:0px;">
-                            <span class="user_name">Bajaj</span>
+                            <span class="user_name"></span>
                              <a style="color: inherit" class="logout_open supply_logout_user" href="#logout" data-toggle="tooltip" data-placement="top" title="Logout" style="">Logout <i class="fa fa-sign-out"></i></a>
                         </p>
                         <div class="clearfix"></div>
@@ -102,9 +102,7 @@
                         <div class="page-title">                          
                             <div id="breadcrumb">
                                 <ul class="crumbs">
-                                    <li class="first"><a href="home.html" style="z-index:9;"><span></span>Dashboard</a></li>
-                                    <li class="first"><a href="open-indents.html" style="z-index:8;"><span></span>Open Indents</a></li>
-                                    <li class="first"><a href="#" style="z-index:8;"><span></span>Indent Details</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -120,7 +118,7 @@
                                 </div>
                                 
                                 <div style="text-align:right;margin-bottom:10px">
-                                    <button type="submit" class="btn btn-default disabled">Submit</button>
+                                    <button type="submit" class="btn btn-default disabled indent-submit-btn">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -145,9 +143,7 @@
                                                     <th>No of Containers</th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="Lrdata">
-                                                
-                                            </tbody>
+                                            <tbody id="Lrdata"></tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -168,56 +164,8 @@
     <script src="js/plugins/popupoverlay/defaults.js"></script>
     <script src="js/script-image.js"></script>
     
-    <div class="modal modal-flex fade in" id="flexModal" tabindex="-1" role="dialog" aria-labelledby="flexModalLabel" aria-hidden="false">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title" id="flexModalLabel">Enter Details</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                                <label for="textInput" class="col-sm-4 control-label">Indent No.:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="indNumDisp" value="" disabled="">
-                                </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                                <label for="textInput" class="col-sm-4 control-label">LR No.:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="LRNumDisp" value="" disabled="">
-                                </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                                <label for="contNum" class="col-sm-4 control-label">Container No.:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" name="contNum" class="form-control" id="contNum" placeholder="Example:'ABCD1234'" maxlength="8"><small>First 4 characters than 7 digits</small>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                                <label for="sealNum" class="col-sm-4 control-label">Seal No.:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" name="contNum" class="form-control" id="sealNum" placeholder="Enter Seal No.">
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-green" id="saveLrDetails">Save</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
+    <div class="lr_details_block"></div>
+    
 
     <!-- Logout Notification Box -->
     <div id="logout">
@@ -225,12 +173,12 @@
         <div class="logout-message">
             <div class="log-body" id="logout-body-img">
                 <p>Select "Logout" below if you are ready to end your current session.</p>
-                <h4 class="user_name">Bajaj</h4><br>
+                <h4 class="user_name text-center"></h4><br>
             </div>
-            <div class="log-btn">
+            <div class="log-btn text-center">
                 <ul class="list-inline">
                     <li>
-                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
+                        <button type="button" id="logout-user" class=" btn btn-green btn logout-window-btns" id="logout-user">Logout</button>
                     </li>
                     <li>
                         <button class="logout_close btn btn-green">Cancel</button>
@@ -246,20 +194,11 @@
     <script src="js/plugins/hisrc/hisrc.js"></script>
     <!-- THEME SCRIPTS -->
     <script src="js/flex.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/indent-details.js"></script>
     <script type="text/javascript">
-        function logout_user() {
-            window.location.href = "index.html";
-        }
 
-    $(document).ready(function(){
-        user = sessionStorage.getItem("username");
-        ug=sessionStorage.getItem('user_group');
-        rm=sessionStorage.getItem('rep_manager');
-        $('.user_name').text(user);
-        var logout_user = '<p><strong>'+user+'</strong></p>';
-        $("#logout-modal-img").append(logout_user);
-    });
+    
     </script>
 <div id="loading">
   <div class="txt"></div>

@@ -1,7 +1,11 @@
 $(document).ready(function(){
-	console.log(localStorage.getItem('access_token'));
+	var token = localStorage.getItem('access_token');
+	var user_id = localStorage.getItem('user_id');
+	console.log(user_id);
+
+	
 	$.ajax({
-		url : 'http://qa.bajaj.gladminds.co/v1/container-trackers/count/?access_token=f55443f6371c0649b9efa96b10860133398cf89c',
+		url : 'http://qa.bajaj.gladminds.co/v1/container-trackers/count/?access_token='+token,
 		type : 'GET',
 		dataType : 'json',
 		success : function(dashboard, status) {
@@ -15,13 +19,6 @@ $(document).ready(function(){
 			}
 		}
 	})
-})
-
-$("#logout-user").click(function(){
-	// alert("logout-user")
-	// logout();
-	localStorage.clear();
-	window.location.href = "index.html";
 })
 
 create_dashboard = function(dashboard) {

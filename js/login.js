@@ -78,7 +78,7 @@ function  loginCheck(){
             success: function (log_data, status) {
                 localStorage.setItem('access_token', log_data.access_token)
                 // sessionStorage.setItem('user_group',log_data.user_group);
-                sessionStorage.setItem('user_id',log_data.user_id);
+                localStorage.setItem('user_id',un);
                 // alert(log_data.login_id+","+log_data.user_group+","+log_data.rep_manager_id);
                 window.location = "home.html";
                     

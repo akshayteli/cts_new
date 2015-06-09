@@ -79,7 +79,7 @@
                             <i class="fa fa-key"></i> Logged in as
                         </p>
                         <p class="name tooltip-sidebar-logout" style="text-align: center; margin-left:0px;">
-                            <span class="user_name">Bajaj</span>
+                            <span class="user_name"></span>
                              <a style="color: inherit" class="logout_open supply_logout_user" href="#logout" data-toggle="tooltip" data-placement="top" title="Logout" style="">Logout <i class="fa fa-sign-out"></i></a>
                         </p>
                         <div class="clearfix"></div>
@@ -157,12 +157,12 @@
         <div class="logout-message">
             <div class="log-body" id="logout-body-img">
                 <p>Select "Logout" below if you are ready to end your current session.</p>
-                <h4 class="user_name">Bajaj</h4><br>
+                <h4 class="user_name"></h4><br>
             </div>
             <div class="log-btn">
                 <ul class="list-inline">
                     <li>
-                        <button type="button" onclick="logout_user();" id="logout-user" class=" btn btn-green btn logout-window-btns">Logout</button>
+                        <button type="button" id="logout-user" class=" btn btn-green btn logout-window-btns">Logout</button>
                     </li>
                     <li>
                         <button class="logout_close btn btn-green">Cancel</button>
@@ -178,20 +178,11 @@
     <script src="js/plugins/hisrc/hisrc.js"></script>
     <!-- THEME SCRIPTS -->
     <script src="js/flex.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/open-indents.js"></script>
     <script type="text/javascript">
-        function logout_user() {
-            window.location.href = "index.html";
-        }
+     
 
-    $(document).ready(function(){
-        user = sessionStorage.getItem("username");
-        ug=sessionStorage.getItem('user_group');
-        rm=sessionStorage.getItem('rep_manager');
-        $('.user_name').text(user);
-        var logout_user = '<p><strong>'+user+'</strong></p>';
-        $("#logout-modal-img").append(logout_user);
-    });
     </script>
 <div id="loading">
   <div class="txt"></div>
